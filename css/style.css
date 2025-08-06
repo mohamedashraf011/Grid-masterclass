@@ -1,0 +1,507 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 26px;
+    margin: 0;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "rotary rotary"
+    "iphone iphone"
+    "keyboard games"
+    "imac imac"
+    "twitter icloud"
+    "muchbetter icloud"
+    "popular popular"
+    "vision vision"; 
+}
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "iphone iphone rotary rotary"
+    "keyboard imac imac icloud"
+    "games muchbetter muchbetter icloud"
+    "twitter popular vision vision";  */
+
+
+.iphone { 
+    grid-area: iphone;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.iphone .content-iphone{
+    width: 32%;
+}
+
+.iphone img{
+    width: 35%;
+    display: block;
+    margin-top: 40px;
+}
+
+.iphone .content-iphone h3{
+    font-family: "Arvo", serif;
+    display: block;
+    font-size: 1.375rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: 400;
+    line-height: 2rem;
+    unicode-bidi: isolate;
+    color: #333;
+}
+
+.iphone .content-iphone p{
+    color: #9fa3a7;
+    font-size: 0.875rem;
+    line-height: 1.625rem;
+    font-weight: 400;
+}
+
+.title-all{
+    font-family: "Montserrat", sans-serif;
+    color: #9fa3a7;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.rotary { 
+    grid-area: rotary;
+    background-color: #F7F8F9;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotary h1{
+    font-family: Arvo, sans-serif;
+    font-size: 3rem;
+    line-height: 60px;
+    font-weight: 400;
+    max-width: 550px;
+    margin: 1.25rem 0 0.625rem;
+    color: #333;
+}
+
+a {
+    color: #27b9c2;
+    text-decoration: underline;
+    font-size: .875rem;
+}
+
+.keyboard { 
+    grid-area: keyboard;
+    background-color: #F05638;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboard img{
+    width: 85%;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.keyboard h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    display: block;
+    max-width: 230px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #fffbfb;
+}
+
+.keyboard a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffc80a;
+}
+
+.imac { 
+    grid-area: imac;
+    background-color: #FFFFFF;
+    display: flex;
+    overflow: hidden;
+    padding-top: 68px;
+    padding-right: 4%;
+    padding-left: 4%;
+    justify-content: space-around;
+}
+
+.imac .imac-content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    max-width: 180px;
+}
+
+.imac .imac-con{
+    width: 40%;
+}
+
+.imac h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333;
+}
+
+.imac .imac-content img{
+    position: relative;
+    left: -160%;
+    width: 250%;
+    max-width: none;
+    margin-top: 20px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.imac .imac-con p{
+    font-size: 14px;
+    color: #9fa3a7;
+}
+
+.imac .imac-con a{
+        display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #27b9c2;
+}
+
+.icloud { 
+    grid-area: icloud;
+    background-color: #8F76BC;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 30px 5% 70px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.icloud .first{
+    display: flex;
+    flex-direction: column;
+    width: 373px;
+    height: 373px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #8166b0;
+    justify-content: center;
+    align-items: center;
+}
+
+.icloud .first .prag{
+    padding: 2px 13px 1px 30px;
+    border-radius: 60px;
+    background-color: hsla(0, 0%, 100%, .08);
+    background-image: url(../images/Shape.png);
+    background-position: 11px 50%;
+    background-size: 12px;
+    background-repeat: no-repeat;
+    font-size: 10px;
+    line-height: 23px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.icloud .first img{
+    position: relative;
+    left: -8px;
+    margin-top: 20px;
+    width: 65%;
+    max-width: 100%;
+    display: inline-block;
+}
+
+.icloud .first .title-all{
+    color: white;
+}
+
+.icloud h2{
+    font-family: Arvo, sans-serif;
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.icloud .description{
+    width: 80%;
+    max-width: 290px;
+    font-size: 0.875rem;
+}
+
+.icloud a{
+    margin-top: 30px;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background-color: #ffc80a;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    text-decoration: none;
+}
+
+.games { 
+    grid-area: games;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.games img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -7%;
+    width: 75%;
+}
+
+.games h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 54%;
+    text-align: center;
+    color: #333;
+}
+
+.games a{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.muchbetter { 
+    grid-area: muchbetter;
+    background-color: #93B6B7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    position: relative;
+    background-image: url(../images/UX.png);
+    background-position: 50% 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+}
+
+.muchbetter p{
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    background-color: #fa684f;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.muchbetter h2{
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    display: block;
+    max-width: 280px;
+    margin: auto;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.muchbetter img{
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    left: -12%;
+    width: 90%;
+}
+
+.twitter { 
+    grid-area: twitter;
+    background-color: #38D5F4;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.twitter .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    padding: 0;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #35cfed;
+}
+
+
+.twitter .circle img {
+    width: 20%;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.twitter .circle h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+}
+
+.popular { 
+    grid-area: popular;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.popular p{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7bc424;
+    color: #fff;
+    font-size: 8px;
+    line-height: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.popular h3{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    width: 70%;
+    text-align: center;
+    color: #333;
+}
+
+.vision { 
+    grid-area: vision;
+    background-color: #2C2C2C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    overflow: hidden;
+    position: relative;
+}
+
+.vision img {
+    position: relative;
+    left: -15%;
+    top: -30px;
+    width: 40%;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.vision h3 {
+    width: 34%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: Arvo, sans-serif;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    position: relative;
+    top: -30px;
+}
